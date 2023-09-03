@@ -8,7 +8,6 @@ function App() {
     <>
       <Header />
       <MountainsList />
-      <ForecastDetails />
     </>
   )
 }

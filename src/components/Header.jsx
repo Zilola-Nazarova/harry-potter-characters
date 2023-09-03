@@ -1,6 +1,7 @@
 import styles from '@/styles/Header.module.css'
 import { useState, useRef } from "react";
 import { useOnClickOutside } from "./useOnClickOutside";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -9,11 +10,23 @@ const Header = () => {
   
   return (
     <header className={styles.header}>
-      <h1><a>Mountains Forecast</a></h1>
+      <h1>
+        <Link to={`/`}>
+          Mountains Forecast
+        </Link>
+      </h1>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About</li>
+          <li>
+            <Link to={`/`}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to={`/about`}>
+              About
+            </Link>
+          </li>
           <li ref={ref}>
             <button onClick={() => setDropdown((prev) => !prev)}>
               Models <span>&#8595;</span>
