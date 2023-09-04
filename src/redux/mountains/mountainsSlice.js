@@ -5,10 +5,12 @@ import mountainsData from '@/database/mountainsData';
 const BASE_URL = 'https://api.open-meteo.com/v1/forecast?';
 const TIMEZONE = 'timezone=auto';
 const CURRENT_WEATHER = 'current_weather=true';
-const REQUEST = `${BASE_URL}${TIMEZONE}&${CURRENT_WEATHER}&`;
+const MODELS = 'models=gfs_seamless,icon_seamless';
+const FORECAST = 'hourly=temperature_2m,precipitation,windspeed_10m,cloudcover';
+const REQUEST = `${BASE_URL}${TIMEZONE}&${CURRENT_WEATHER}&${MODELS}&${FORECAST}`;
 
-export const getCurrentWeather = createAsyncThunk(
-  'mountains/getCurrentWeather',
+export const getWeather = createAsyncThunk(
+  'mountains/getWeather',
   async (peak, thunkAPI) => {
     try {
       const lat = peak.latitude;
@@ -35,22 +37,23 @@ export const mountainsSlice = createSlice({
   reducers: { },
   extraReducers(builder) {
     builder
-      .addCase(getCurrentWeather.pending, (state) => {
+      .addCase(getWeather.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(getCurrentWeather.fulfilled, (state, action) => {
+      .addCase(getWeather.fulfilled, (state, action) => {
         state.isLoading = false;
         state.mountains = state.mountains.map((peak) => {
           if (peak.name === action.payload.name) {
-            return {...peak, current_weather: action.payload.current_weather};
+            return {
+              ...peak,
+              current_weather: action.payload.current_weather,
+              forecast: action.payload.hourly
+            };
           }
           return peak;
         })
-        // console.log(state.mountains)
-        // console.log(newArray)
-        // state.mountains = newArray;
       })
-      .addCase(getCurrentWeather.rejected, (state, action) => {
+      .addCase(getWeather.rejected, (state, action) => {
         state.isLoading = false;
         state.error = action.payload.message;
       });
