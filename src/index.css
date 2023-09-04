@@ -1,13 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@font-face {
+  font-family: 'Gill Sans';
+  font-weight: light;
+  src: url('./assets/GillSans/Gill\ Sans\ Light.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Gill Sans';
+  font-weight: medium;
+  src: url('./assets/GillSans/Gill\ Sans\ Medium.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Gill Sans';
+  font-weight: bold;
+  src: url('./assets/GillSans/Gill\ Sans\ Bold.otf') format("opentype");
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
 }
