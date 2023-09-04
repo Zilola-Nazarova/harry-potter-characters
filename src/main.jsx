@@ -12,6 +12,7 @@ import Home from './routes/Home';
 import About from './components/About';
 import store from '@/redux/store';
 import { Provider } from 'react-redux';
+import Models from './routes/Models';
 
 const router = createBrowserRouter([
   {
@@ -20,16 +21,20 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "details/:id",
-        element: <Details />,
-      },
-      {
         path: "/",
         element: <Home />,
       },
       {
+        path: "details/:id",
+        element: <Details />,
+      },
+      {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "models/:id",
+        element: <Models />,
       },
     ],
   },

@@ -32,8 +32,16 @@ const Header = () => {
               Models <span>&#8595;</span>
             </button>
             {dropdown && (<ul>
-              <li>ICON</li>
-              <li>GFS</li>
+              <li>
+                <Link to={`/models/icon`}>
+                  ICON
+                </Link>
+              </li>
+              <li>
+                <Link to={`/models/gfs`}>
+                  GFS
+                </Link>
+              </li>
             </ul>)}
           </li>
         </ul>
