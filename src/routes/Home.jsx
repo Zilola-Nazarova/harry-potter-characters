@@ -1,25 +1,15 @@
-import Header from '@/components/Header'
-import { Outlet } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { getWeather } from "@/redux/mountains/mountainsSlice";
-import { useEffect } from 'react';
-import mountainsData from '@/database/mountainsData';
+import { useSelector } from 'react-redux';
+import MountainsList from "@/components/MountainsList";
 
 const Home = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    mountainsData.forEach(
-      (peak) => dispatch(getWeather(peak))
-    );
-  }, [dispatch]);
-
+  const data = useSelector((store) => store.mountains);
+  
   return (
     <>
-      <Header />
-      <div id="outlet">
-        <Outlet />
-      </div>
+      <p>This is Mountains List</p>
+      <MountainsList 
+        data={data}
+      />
     </>
   )
 }

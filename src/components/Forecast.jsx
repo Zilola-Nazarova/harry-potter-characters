@@ -1,9 +1,7 @@
-import styles from '@/styles/ForecastDetails.module.css'
-import { useSelector, useDispatch } from 'react-redux';
+import styles from '@/styles/Forecast.module.css'
 
-const Forecast = ({peak}) => {
-  const dispatch = useDispatch();
-  const { mountains, isLoading, error } = useSelector((store) => store.mountains);
+const Forecast = ({peak, data}) => {
+  const { isLoading, error } = data;
 
   if (isLoading) {
     return <p className={styles.loading}>The forecast is loading!</p>;

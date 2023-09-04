@@ -3,15 +3,16 @@ import { useParams } from 'react-router';
 import { useSelector } from 'react-redux';
 
 const Details = () => {
-  const {mountains} = useSelector((state) => state.mountains);
+  const data = useSelector((state) => state.mountains);
   const { id } = useParams();
-  const peak = mountains.find((peak) => peak.name === id);
+  const peak = data.mountains.find((peak) => peak.name === id);
   
   return (
     <>
       <p>This is forecast</p>
       <Forecast 
         peak={peak}
+        data={data}
       />
     </>
   )
