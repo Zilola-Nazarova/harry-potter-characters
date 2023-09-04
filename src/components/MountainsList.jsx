@@ -20,7 +20,18 @@ const MountainsList = () => {
   }
   if (mountains.length !== 0) {
     return (
-      <p>{JSON.stringify(mountains)}</p>
+      <div>
+        {
+          mountains.map((peak) => (
+            <>
+              <p>{peak.name}</p>
+              <p>{peak.elevation}</p>
+              <p>{JSON.stringify(peak.current_weather)}</p>
+              <Link to={`details/${peak.name}`}>See Details -&gt;</Link>
+            </>
+          ))
+        }
+      </div>
     )
   }
 }
