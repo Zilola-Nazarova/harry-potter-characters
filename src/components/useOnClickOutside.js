@@ -6,10 +6,10 @@ export const useOnClickOutside = (ref, currentState, updater) => {
         updater();
       }
     };
-    document.addEventListener("mousedown", handler);
+    document.addEventListener("mouseup", handler);
     return () => {
       // Cleanup the event listener
-      document.removeEventListener("mousedown", handler);
+      document.removeEventListener("mouseup", handler);
     };
   }, [ref, currentState, updater]);
 };
