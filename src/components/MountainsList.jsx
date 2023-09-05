@@ -57,7 +57,7 @@ const MountainsList = () => {
           )}
 
           <ul className={styles.list}>
-            {filteredMountains.map((peak) => (
+            {filteredMountains.sort((a, b) => a.name.localeCompare(b.name)).map((peak) => (
               <li
                 key={uuidv4()}
                 className={styles.card}
