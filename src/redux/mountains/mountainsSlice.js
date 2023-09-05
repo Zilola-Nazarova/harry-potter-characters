@@ -65,7 +65,7 @@ export const mountainsSlice = createSlice({
                   temperature: action.payload.hourly.temperature_2m_gfs_seamless,
                   precipitation: action.payload.hourly.precipitation_gfs_seamless,
                   windspeed: action.payload.hourly.windspeed_10m_gfs_seamless,
-                  cloudcover: action.payload.hourly.scloudcover_gfs_seamless
+                  cloudcover: action.payload.hourly.cloudcover_gfs_seamless
                 }
               },
               time: action.payload.current_weather.time.split("T").pop(),
