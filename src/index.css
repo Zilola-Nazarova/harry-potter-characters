@@ -41,6 +41,7 @@ html,body {
 
 #outlet {
   flex: 2;
+  background-color: rgb(67, 104, 175);
 }
 
 #outlet h3 {

@@ -1,0 +1,38 @@
+.gfs,
+.icon {
+  background-color: rgb(67, 104, 175);
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.gfs > p,
+.gfs > h2,
+.icon > p,
+.icon > h2,
+.icon > ul {
+  padding: 1rem 1rem;
+}
+
+.icon > ul {
+  background-color: rgb(53, 84, 139);
+}
+
+.icon li {
+  margin-left: 1rem;
+  list-style-type: square;
+}
+
+.gfs h2,
+.icon h2 {
+  background-color: rgb(86, 136, 231);
+}
+
+.gfs p:first-child,
+.icon p:first-child {
+  background-color: rgb(53, 84, 139);
+}
+
+.gfs a,
+.icon a {
+  color: #fff;
+}
