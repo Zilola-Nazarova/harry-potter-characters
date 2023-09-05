@@ -16,33 +16,35 @@ const MainData = ({main_data}) => {
   return (
     <div className={styles.country}>
       <img src={uz}></img>
-      <div>
         {
           (!id) ?
-          <>
+          <div className={styles.homepage_text}>
             <h2>uzbekistan</h2>
             <p>{mountainsData.length} peaks</p>
-            <p>last update:
+            <p>last update
               <br />
-              {time}
+              <span>on {date}</span>
               <br />
-              {date}
+              <span>at {time}</span>
             </p>
-          </>
+          </div>
           :
-          <>
+          <div className={styles.current_weather}>
             <h2>{id}</h2>
             <p>current weather</p>
             <ul className={styles.weather}>
-                <li>temperature {main_data.temperature}</li>
-                <li>wind speed {main_data.windspeed}</li>
-                <li>wind direction {main_data.winddirection}</li>
-                <li>updated on {main_data.time}</li>
+                <li>temperature <span>{main_data.temperature} °C</span></li>
+                <li>wind speed <span>{main_data.windspeed} km/h</span></li>
+                <li>wind direction <span>{main_data.winddirection} °</span></li>
             </ul>
-          </>
+            <p>last update
+              <br/>
+              <span>{date} </span>{' '}
+              <span> at {time}</span>
+            </p>
+          </div>
         }
       </div>
-    </div>
   )
 }
 
