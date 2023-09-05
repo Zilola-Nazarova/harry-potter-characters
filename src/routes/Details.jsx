@@ -11,8 +11,8 @@ const Details = () => {
     <>
       {/* <p>{JSON.stringify(peak)}</p> */}
       <MainData main_data={peak.current_weather}/>
-      <h3>{peak.name} forecast</h3>
-      <Forecast 
+      <Forecast
+        peak_name={peak.name}
         forecast={peak.forecast}
         data={data}
       />
