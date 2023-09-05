@@ -47,7 +47,9 @@ export const mountainsSlice = createSlice({
             return {
               ...peak,
               current_weather: action.payload.current_weather,
-              forecast: action.payload.hourly
+              forecast: action.payload.hourly,
+              time: action.payload.current_weather.time.split("T").pop(),
+              date: action.payload.current_weather.time.split("T")[0],
             };
           }
           return peak;

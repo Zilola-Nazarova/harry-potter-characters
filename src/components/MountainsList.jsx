@@ -1,11 +1,11 @@
+import { useSelector } from 'react-redux';
 import styles from '@/styles/MountainsList.module.css';
 import { Link } from "react-router-dom";
-import mountainImage from "@/assets/mountain.png";
-import peakImage from '@/assets/peak.svg';
-import {BsArrowRightCircle} from 'react-icons/bs';
+import { BsArrowRightCircle } from 'react-icons/bs';
+import mountainsData from '@/database/mountainsData';
 
-const MountainsList = ({data}) => {
-  const { mountains, isLoading, error } = data;
+const MountainsList = () => {
+  const { mountains, isLoading, error } = useSelector((store) => store.mountains);
 
   if (isLoading) {
     return <p className={styles.loading}>The forecast is loading!</p>;
@@ -23,19 +23,19 @@ const MountainsList = ({data}) => {
     return (
       <ul className={styles.list}>
         {
-          data.mountains.map((peak) => (
+          mountains.map((peak) => (
             <li
               key={peak.name}
               className={styles.card}
             >
               <Link to={`details/${peak.name}`}>
-                <div>
-                  <BsArrowRightCircle />
-                  <img src={mountainImage}></img>
-                  <h4 className={styles.name}>{peak.name}</h4>
-                  <span className={styles.elevation}>{peak.elevation}</span>
-                  <p className={styles.code}>weather code {peak.current_weather.weathercode}</p>
-                </div>
+                  <BsArrowRightCircle className={styles.icon}/>
+                  <img src={peak.image}></img>
+                  <div>
+                    <h4 className={styles.name}>{peak.name}</h4>
+                    <span className={styles.elevation}>{peak.elevation}</span>
+                    <p className={styles.code}>weather code {peak.current_weather.weathercode}</p>
+                  </div>      
               </Link>
             </li>
           ))
