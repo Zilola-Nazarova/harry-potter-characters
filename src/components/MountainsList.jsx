@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { BsArrowRightCircle } from 'react-icons/bs';
 import mountainsData from '@/database/mountainsData';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 const MountainsList = () => {
   const { mountains, isLoading, error } = useSelector((store) => store.mountains);
@@ -57,7 +58,7 @@ const MountainsList = () => {
           <ul className={styles.list}>
             {filteredMountains.map((peak) => (
               <li
-                key={peak.name}
+                key={uuidv4()}
                 className={styles.card}
               >
                 <Link to={`details/${peak.name}`}>
