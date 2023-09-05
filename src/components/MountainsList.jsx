@@ -8,7 +8,7 @@ const MountainsList = () => {
   const { mountains, isLoading, error } = useSelector((store) => store.mountains);
 
   if (isLoading) {
-    return <p className={styles.loading}>The forecast is loading!</p>;
+    return <p className={styles.loading}>The forecast is loading...</p>;
   }
   if (error) {
     return (

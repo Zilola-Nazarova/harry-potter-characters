@@ -42,6 +42,8 @@ html,body {
 #outlet {
   flex: 2;
   background-color: rgb(67, 104, 175);
+  display: flex;
+  flex-direction: column;
 }
 
 #outlet h3 {
