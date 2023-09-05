@@ -29,9 +29,10 @@ const MountainsList = () => {
   
   return (
     <>
-      <h3>current weather on peaks</h3>
-      <div className="search">
+      <div className={styles.search}>
+        <h3>current weather on peaks</h3>
         <input
+          placeholder='search a mountain...'
           onChange={inputHandler}
         />
       </div>

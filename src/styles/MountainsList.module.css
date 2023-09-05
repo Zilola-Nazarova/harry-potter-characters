@@ -5,6 +5,38 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.search {
+  height: 2.2rem;
+  padding: 0 1rem;
+  background-color: #35548b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search h3 {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+}
+
+.search input {
+  border: none;
+  color: #fff;
+  background-color: #5688e7;
+  height: 1.2rem;
+  width: 35%;
+  padding: 0 5px;
+}
+
+.search input::placeholder {
+  color: #2d4573;
+}
+
 .card:nth-child(4n+1),
 .card:nth-child(4n+0) {
   background-color: #4368af;
