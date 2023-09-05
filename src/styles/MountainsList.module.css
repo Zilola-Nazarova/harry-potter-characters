@@ -1,4 +1,35 @@
 .list {
-  background-color: blanchedalmond;
-  color: red;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card:nth-child(4n+1),
+.card:nth-child(4n+0) {
+  background-color: #4368af;
+}
+
+.card:nth-child(4n+2),
+.card:nth-child(4n+3) {
+  background-color: #3f62a6;
+}
+
+.card img {
+  width: 100%;
+}
+
+.name {
+  
+}
+
+.elevation {
+  
+}
+
+.code {
+  
+}
+
+.card {
+  
 }

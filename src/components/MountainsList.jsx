@@ -1,8 +1,12 @@
 import styles from '@/styles/MountainsList.module.css';
 import { Link } from "react-router-dom";
+import mountainImage from "@/assets/mountain.png";
+import peakImage from '@/assets/peak.svg';
+import {BsArrowRightCircle} from 'react-icons/bs';
 
 const MountainsList = ({data}) => {
   const { mountains, isLoading, error } = data;
+
   if (isLoading) {
     return <p className={styles.loading}>The forecast is loading!</p>;
   }
@@ -15,20 +19,28 @@ const MountainsList = ({data}) => {
       </p>
     );
   }
-  if (mountains.length !== 0) {
+  if (!isLoading) {
     return (
-      <div>
+      <ul className={styles.list}>
         {
           data.mountains.map((peak) => (
-            <li key={peak.name}>
-              <p>{peak.name}</p>
-              <p>{peak.elevation}</p>
-              <p>{JSON.stringify(peak.current_weather)}</p>
-              <Link to={`details/${peak.name}`}>See Details -&gt;</Link>
+            <li
+              key={peak.name}
+              className={styles.card}
+            >
+              <Link to={`details/${peak.name}`}>
+                <div>
+                  <BsArrowRightCircle />
+                  <img src={mountainImage}></img>
+                  <h4 className={styles.name}>{peak.name}</h4>
+                  <span className={styles.elevation}>{peak.elevation}</span>
+                  <p className={styles.code}>weather code {peak.current_weather.weathercode}</p>
+                </div>
+              </Link>
             </li>
           ))
         }
-      </div>
+      </ul>
     )
   }
 }
