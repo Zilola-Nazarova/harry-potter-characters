@@ -3,32 +3,64 @@ import styles from '@/styles/MountainsList.module.css';
 import { Link } from "react-router-dom";
 import { BsArrowRightCircle } from 'react-icons/bs';
 import mountainsData from '@/database/mountainsData';
+import { useState } from 'react';
 
 const MountainsList = () => {
   const { mountains, isLoading, error } = useSelector((store) => store.mountains);
+  const [inputText, setInputText] = useState("");
 
-  if (isLoading) {
-    return <p className={styles.loading}>The forecast is loading...</p>;
-  }
-  if (error) {
-    return (
-      <p className={styles.error}>
-        Something went wrong!
-        <br />
-        { error }
-      </p>
-    );
-  }
-  if (!isLoading) {
-    return (
-      <ul className={styles.list}>
-        {
-          mountains.map((peak) => (
-            <li
-              key={peak.name}
-              className={styles.card}
-            >
-              <Link to={`details/${peak.name}`}>
+  let inputHandler = (e) => {
+    //convert input text to lower case
+    var lowerCase = e.target.value.toLowerCase();
+    setInputText(lowerCase);
+  };
+
+  const filteredMountains = mountains.filter((peak) => {
+    //if no input the return the original
+    if (inputText === '') {
+      return peak;
+    }
+    //return the item which contains the user input
+    else {
+      return peak.name.toLowerCase().includes(inputText)
+    }
+  });
+  
+  return (
+    <>
+      <h3>current weather on peaks</h3>
+      <div className="search">
+        <input
+          onChange={inputHandler}
+        />
+      </div>
+      {(isLoading) && <p className={styles.loading}>The mountains list is loading...</p>}
+
+      {(error) && (
+        <p className={styles.error}>
+          Something went wrong!
+          <br />
+          { error }
+        </p>
+      )}
+
+      {(!isLoading && !error) && (
+        <>
+          {(filteredMountains.length === 0) && (
+            <p className={styles.error}>
+              Something went wrong!
+              <br />
+              No matching mountains found.
+            </p>
+          )}
+
+          <ul className={styles.list}>
+            {filteredMountains.map((peak) => (
+              <li
+                key={peak.name}
+                className={styles.card}
+              >
+                <Link to={`details/${peak.name}`}>
                   <BsArrowRightCircle className={styles.icon}/>
                   <img src={peak.image}></img>
                   <div>
@@ -36,13 +68,14 @@ const MountainsList = () => {
                     <span className={styles.elevation}>{peak.elevation}</span>
                     <p className={styles.code}>weather code {peak.current_weather.weathercode}</p>
                   </div>      
-              </Link>
-            </li>
-          ))
-        }
-      </ul>
-    )
-  }
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+    </>
+  )
 }
 
 export default MountainsList;
