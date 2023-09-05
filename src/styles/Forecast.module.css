@@ -55,6 +55,12 @@ th {
   align-items: center;
 }
 
+th:nth-child(2n+0) {
+  height: 2rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
 .forecast img {
   height: 2rem;
 }

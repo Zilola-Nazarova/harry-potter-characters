@@ -46,36 +46,42 @@ const Forecast = ({peak_name, forecast, data}) => {
             <tbody>
               <tr key="day">
                 <th>day</th>
+                <th>mm-dd</th>
                 {forecast.intervals.map((time) => (
-                  <td>{time.substring(0, 10)}</td>  
+                  <td>{time.substring(5, 10)}</td>  
                 ))}
               </tr>
               <tr key="time">
                 <th>time</th>
+                <th>hh:mm</th>
                 {forecast.intervals.map((day) => (
                   <td>{day.substring(day.length - 5)}</td>  
                 ))}
               </tr>
               <tr key="temp">
                 <th><img src={tmp} /></th>
+                <th>°C</th>
                 {forecast[model]['temperature'].map((data) => (
                   <td>{data}</td>
                 ))}
               </tr>
-              <tr key="perc">
-                <th><img src={wng} /></th>
+              <tr key="prec">
+                <th><img src={rn} /></th>
+                <th>mm</th>
                 {forecast[model]['precipitation'].map((data) => (
                   <td>{data}</td>
                 ))}
               </tr>
               <tr key="wind">
-                <th><img src={rn} /></th>
+                <th><img src={wng} /></th>
+                <th>km/h</th>
                 {forecast[model]['windspeed'].map((data) => (
                   <td>{data}</td>
                 ))}
               </tr>
               <tr key="cloud">
                 <th><img src={cld} /></th>
+                <th>%</th>
                 {forecast[model]['cloudcover'].map((data) => (
                   <td>{data}</td>
                 ))}
