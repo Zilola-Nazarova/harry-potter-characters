@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <>
       <MainData />
-      <h3>current weather on peaks</h3>
       <MountainsList />
     </>
   )
