@@ -3,7 +3,7 @@ import styles from '@/styles/About.module.css'
 const About = () => {
   return (
     <div className={styles.about}>
-      <h2 className={styles.bright}>What is mountainsforecast.uz?</h2>
+      <h2 className={styles.bright}>What is Mountains Forecast?</h2>
       <p>Mountains Forecast is a site that lists down the mountains located in Uzbekistan with the following data for each mountain:</p>
       <ul className={styles.dark}>
         <li>elevation (in m)</li>
@@ -12,14 +12,14 @@ const About = () => {
       <p>When a mountain is selected, current weather and hourly forecasts are displayed:</p>
       <ul>
         <li className={styles.bright}><span>current weather:</span>
-          <ul className={styles.dark}>
+          <ul>
             <li>temperature (in °C)</li>
             <li>wind speed (in km/h)</li>
             <li>wind direction (in °)</li>
           </ul>
         </li>
         <li className={styles.bright}><span>hourly forecast:</span>
-          <ul className={styles.dark}>
+          <ul>
             <li>temperature (in °C)</li>
             <li>precipitation (in mm)</li>
             <li>wind speed (in km/h)</li>
@@ -29,6 +29,12 @@ const About = () => {
       </ul>
       <p>You can swith the displayed forecast to show information according to ICON or GFS forecast models.</p>
       <p>The navigation bar has Models button with links to information about main forecast models: ICON and GFS</p>
+      <div className={styles.credits}>
+        <h3 className={styles.bright}>thanks</h3>
+        <p>Weather information by <a target="_blank" href="https://open-meteo.com/">open-meteo.com</a> API</p>
+        <p>Map of Uzbekistan by <a target="_blank" href="https://vemaps.com/">Vemaps.com</a></p>
+        <p>Original design idea by  <a target="_blank" href="https://www.behance.net/sakwadesignstudio">Nelson Sakwa</a> on Behance.</p>
+      </div>
     </div>
   )
 }
