@@ -44,6 +44,7 @@ const Icon = () => (
     </p>
     <p>
       The official website of the model is
+      {' '}
       <a rel="noreferrer" href="https://www.dwd.de/EN/ourservices/nwp_forecast_data/nwp_forecast_data.html" target="_blank">
         Dwd.de
       </a>

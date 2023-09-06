@@ -29,6 +29,7 @@ const Gfs = () => (
     </p>
     <p>
       The official website of the model is
+      {' '}
       <a rel="noreferrer" href="https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs" target="_blank">
         Ncdc.noaa.gov
       </a>
