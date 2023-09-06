@@ -5,12 +5,17 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.gfs > p,
+
 .gfs > h2,
-.icon > p,
+
 .icon > h2,
 .icon > ul {
   padding: 1rem 1rem;
+}
+.icon > p,
+.gfs > p {
+  padding: 0 1rem;
+  margin: 1rem 0;
 }
 
 .icon > ul {
