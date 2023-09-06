@@ -4,6 +4,20 @@
   color: #fff;
 }
 
+.peak_name {
+  background-color: #35548b;
+  height: 2.2rem;
+  padding: 0 1rem;
+  line-height: 2.2rem;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+}
+
 .model {
   margin-bottom: 1rem;
   width: 30%;
@@ -41,7 +55,7 @@ table {
 }
 
 td {
-  padding: 15px 10px;
+  padding: 0.5rem 0px;
   text-align: center;
   border-bottom: 1px solid #5688e7;
   justify-self: center;
@@ -57,7 +71,7 @@ th {
 
 th:nth-child(2n+0) {
   height: 2rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 

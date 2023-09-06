@@ -24,7 +24,7 @@ const Forecast = ({peak_name, forecast, data}) => {
   if (forecast) {
     return (
       <>
-        <h3>{peak_name} forecast</h3>
+        <h3 className={styles.peak_name}>{peak_name} forecast</h3>
         <div className={styles.forecast}>
           <div className={styles.model}>
             <button
@@ -47,43 +47,43 @@ const Forecast = ({peak_name, forecast, data}) => {
               <tr key="day">
                 <th>day</th>
                 <th>mm-dd</th>
-                {forecast.intervals.map((time) => (
-                  <td>{time.substring(5, 10)}</td>  
+                {forecast.intervals.map((time, i) => (
+                  <td key={i}>{time.substring(5, 10)}</td>  
                 ))}
               </tr>
               <tr key="time">
                 <th>time</th>
                 <th>hh:mm</th>
-                {forecast.intervals.map((day) => (
-                  <td>{day.substring(day.length - 5)}</td>  
+                {forecast.intervals.map((day, i) => (
+                  <td key={i}>{day.substring(day.length - 5)}</td>  
                 ))}
               </tr>
               <tr key="temp">
                 <th><img src={tmp} /></th>
                 <th>°C</th>
-                {forecast[model]['temperature'].map((data) => (
-                  <td>{data}</td>
+                {forecast[model]['temperature'].map((data, i) => (
+                  <td key={i}>{data}</td>
                 ))}
               </tr>
               <tr key="prec">
                 <th><img src={rn} /></th>
                 <th>mm</th>
-                {forecast[model]['precipitation'].map((data) => (
-                  <td>{data}</td>
+                {forecast[model]['precipitation'].map((data, i) => (
+                  <td key={i}>{data}</td>
                 ))}
               </tr>
               <tr key="wind">
                 <th><img src={wng} /></th>
                 <th>km/h</th>
-                {forecast[model]['windspeed'].map((data) => (
-                  <td>{data}</td>
+                {forecast[model]['windspeed'].map((data, i) => (
+                  <td key={i}>{data}</td>
                 ))}
               </tr>
               <tr key="cloud">
                 <th><img src={cld} /></th>
                 <th>%</th>
-                {forecast[model]['cloudcover'].map((data) => (
-                  <td>{data}</td>
+                {forecast[model]['cloudcover'].map((data, i) => (
+                  <td key={i}>{data}</td>
                 ))}
               </tr>
             </tbody>
