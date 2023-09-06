@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
 .navigation * {
@@ -40,11 +40,13 @@
 .title {
   flex-grow: 1;
   text-align: center;
+  white-space: nowrap;
 }
 
 .navigation button {
   all: unset;
   cursor: pointer;
+  margin-left: 1rem;
 }
 
 .navigation li {
