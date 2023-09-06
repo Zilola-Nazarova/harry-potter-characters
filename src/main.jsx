@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Root from './routes/Root';
-import ErrorPage from "./components/ErrorPage";
+import ErrorPage from "./routes/ErrorPage";
 import Details from './routes/Details';
 import {
   createBrowserRouter,
@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import './index.css';
 import Home from './routes/Home';
-import About from './components/About';
+import About from './routes/About';
 import store from '@/redux/store';
 import { Provider } from 'react-redux';
 import Models from './routes/Models';
