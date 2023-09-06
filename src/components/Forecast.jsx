@@ -10,11 +10,11 @@ const Forecast = ({peak_name, forecast, data}) => {
   const [model, setModel] = useState("icon");
 
   if (isLoading) {
-    return <p className={styles.loading}>The forecast is loading!</p>;
+    return <p className="loading">The forecast is loading!</p>;
   }
   if (error) {
     return (
-      <p className={styles.error}>
+      <p className="error">
         Something went wrong!
         <br />
         { error }

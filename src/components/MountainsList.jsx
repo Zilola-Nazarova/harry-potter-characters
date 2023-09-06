@@ -36,10 +36,10 @@ const MountainsList = () => {
           onChange={inputHandler}
         />
       </div>
-      {(isLoading) && <p className={styles.loading}>The mountains list is loading...</p>}
+      {(isLoading) && <p className="loading">The mountains list is loading...</p>}
 
       {(error) && (
-        <p className={styles.error}>
+        <p className="error">
           Something went wrong!
           <br />
           { error }

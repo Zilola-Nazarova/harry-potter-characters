@@ -1,36 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
-/* @font-face {
-  font-family: 'Gill Sans light';
-  font-weight: light;
-  src: local('Gill_Sans_Light'),
-  url('./fonts/Gill_Sans_Light.otf') format("opentype");
-}
-
-@font-face {
-  font-family: 'Gill Sans medium';
-  font-weight: medium;
-  src: local('Gill_Sans_Medium'),
-  url('./fonts/Gill_Sans_Medium.otf') format("opentype");
-}
-
-@font-face {
-  font-family: 'Gill Sans bold';
-  font-weight: bold;
-  src: local('Gill_Sans_Bold'),
-  url('./fonts/Gill_Sans_Bold.otf') format("opentype");
-} */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* 
+
 html,body {
-  height: 100%;
-  box-sizing: border-box;
-} */
+  min-width: 350px;
+  background-color: rgb(67, 104, 175);
+}
 
 #root {
   height: 100%;
@@ -46,14 +25,11 @@ html,body {
   flex-direction: column;
 }
 
-#outlet h3 {
-  padding: 0 1rem;
-  text-transform: uppercase;
-  background-color: #35548b;
-  font-family: 'Lato', sans-serif;
-  height: 2rem;
-  line-height: 2rem;
+.loading,
+.error {
   color: #fff;
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: auto
 }
