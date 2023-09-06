@@ -1,3 +1,52 @@
 .about {
-  background-color: blue;
+  background-color: rgb(67, 104, 175);
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about > p {
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+.about > h2 {
+  padding: 1rem 1rem;
+}
+
+.dark {
+  background-color: rgb(53, 84, 139);
+}
+
+.about > ul:first-of-type {
+  padding: 0.5rem 2rem;
+}
+
+li.bright {
+  padding-left: 1rem;
+  list-style-position: inside;
+  text-transform: uppercase;
+}
+
+li.bright span {
+  display: inline-block;
+  padding: 0.3rem 0;
+}
+
+li.bright ul {
+  margin-left: -1rem;
+  padding-left: 2.5rem;
+  text-transform: lowercase;
+  list-style: none;
+}
+
+li.bright li:first-child {
+  padding-top: 0.3rem
+}
+
+li.bright li:last-child {
+  padding-bottom: 0.3rem
+}
+
+.bright {
+  background-color: rgb(86, 136, 231);
 }
