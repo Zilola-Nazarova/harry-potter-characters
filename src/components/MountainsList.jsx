@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import styles from '@/styles/MountainsList.module.css';
-import weatherCodes from '@/database/weatherCodes';
+import weatherCodes from '../database/weatherCodes';
 
 const MountainsList = () => {
   const { mountains, isLoading, error } = useSelector((store) => store.mountains);

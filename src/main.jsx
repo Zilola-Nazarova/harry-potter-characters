@@ -5,7 +5,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom';
-import store from '@/redux/store';
+import store from './redux/store';
 import Root from './routes/Root';
 import ErrorPage from './routes/ErrorPage';
 import Details from './routes/Details';

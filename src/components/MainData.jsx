@@ -1,14 +1,13 @@
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import uz from '../assets/uz-03.svg';
-import mountainsData from '@/database/mountainsData.js';
+import mountainsData from '../database/mountainsData';
 import styles from '@/styles/MainData.module.css';
 
-const MainData = ({ mainData }) => {
+const MainData = () => {
   const { id } = useParams();
-  // const data = useSelector((state) => state.mountains);
-  // const peak = data.mountains.find((peak) => peak.name === id);
-  // const forecast = peak.forecast;
+  const data = useSelector((state) => state.mountains);
+  const peak = data.mountains.find((peak) => peak.name === id);
   const time = useSelector((store) => store.mountains.mountains[0].time);
   const date = useSelector((store) => store.mountains.mountains[0].date);
 
@@ -22,6 +21,7 @@ const MainData = ({ mainData }) => {
               <h2>uzbekistan</h2>
               <p>
                 {mountainsData.length}
+                {' '}
                 peaks
               </p>
               <p>
@@ -29,11 +29,13 @@ const MainData = ({ mainData }) => {
                 <br />
                 <span>
                   on
+                  {' '}
                   {date}
                 </span>
                 <br />
                 <span>
                   at
+                  {' '}
                   {time}
                 </span>
               </p>
@@ -47,21 +49,24 @@ const MainData = ({ mainData }) => {
                 <li>
                   temperature
                   <span>
-                    {mainData.temperature}
+                    {peak.current_weather.temperature}
+                    {' '}
                     °C
                   </span>
                 </li>
                 <li>
                   wind speed
                   <span>
-                    {mainData.windspeed}
+                    {peak.current_weather.windspeed}
+                    {' '}
                     km/h
                   </span>
                 </li>
                 <li>
                   wind direction
                   <span>
-                    {mainData.winddirection}
+                    {peak.current_weather.winddirection}
+                    {' '}
                     °
                   </span>
                 </li>
@@ -71,9 +76,9 @@ const MainData = ({ mainData }) => {
                 <br />
                 <span>
                   {date}
-                </span>
-                <span>
+                  {' '}
                   at
+                  {' '}
                   {time}
                 </span>
               </p>

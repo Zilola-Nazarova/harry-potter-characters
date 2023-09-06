@@ -39,10 +39,11 @@
 
 .country p:last-child {
   font-family: 'Lato', sans-serif;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
   text-align: end;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  word-spacing: 2px;
 }
 
 .country p span {
@@ -54,11 +55,16 @@
   font-size: 1.4rem;
 }
 
+.current_weather p:first-of-type {
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+}
+
 .current_weather ul {
   border-top: 1px solid #fff;
   list-style: none;
   font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .current_weather li {

@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import mountainsData from '@/database/mountainsData';
+import mountainsData from '../../database/mountainsData';
 
 const BASE_URL = 'https://api.open-meteo.com/v1/forecast?';
 const TIMEZONE = 'timezone=auto';

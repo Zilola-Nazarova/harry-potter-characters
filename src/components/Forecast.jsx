@@ -1,3 +1,5 @@
+import { useParams } from 'react-router';
+import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import styles from '@/styles/Forecast.module.css';
@@ -6,8 +8,10 @@ import rn from '@/assets/weather/rn.svg';
 import tmp from '@/assets/weather/tmp.svg';
 import wng from '@/assets/weather/wng.svg';
 
-const Forecast = ({ peakName, forecast, data }) => {
-  const { isLoading, error } = data;
+const Forecast = () => {
+  const { id } = useParams();
+  const { isLoading, error, mountains } = useSelector((state) => state.mountains);
+  const peak = mountains.find((peak) => peak.name === id);
   const [model, setModel] = useState('icon');
 
   if (isLoading) {
@@ -22,10 +26,11 @@ const Forecast = ({ peakName, forecast, data }) => {
       </p>
     );
   }
-  return (
+  return (peak.forecast) && (
     <>
       <h3 className={styles.peak_name}>
-        {peakName}
+        {peak.name}
+        {' '}
         forecast
       </h3>
       <div className={styles.forecast}>
@@ -50,42 +55,42 @@ const Forecast = ({ peakName, forecast, data }) => {
             <tr key="day">
               <th>day</th>
               <th>mm-dd</th>
-              {forecast.intervals.map((time) => (
+              {peak.forecast.intervals.map((time) => (
                 <td key={uuidv4()}>{time.substring(5, 10)}</td>
               ))}
             </tr>
             <tr key="time">
               <th>time</th>
               <th>hh:mm</th>
-              {forecast.intervals.map((day) => (
+              {peak.forecast.intervals.map((day) => (
                 <td key={uuidv4()}>{day.substring(day.length - 5)}</td>
               ))}
             </tr>
             <tr key="temp">
               <th><img alt="Temperature icon" src={tmp} /></th>
               <th>°C</th>
-              {forecast[model].temperature.map((data) => (
+              {peak.forecast[model].temperature.map((data) => (
                 <td key={uuidv4()}>{data}</td>
               ))}
             </tr>
             <tr key="prec">
               <th><img alt="Rain icon" src={rn} /></th>
               <th>mm</th>
-              {forecast[model].precipitation.map((data) => (
+              {peak.forecast[model].precipitation.map((data) => (
                 <td key={uuidv4()}>{data}</td>
               ))}
             </tr>
             <tr key="wind">
               <th><img alt="Wind icon" src={wng} /></th>
               <th>km/h</th>
-              {forecast[model].windspeed.map((data) => (
+              {peak.forecast[model].windspeed.map((data) => (
                 <td key={uuidv4()}>{data}</td>
               ))}
             </tr>
             <tr key="cloud">
               <th><img alt="Cloud icon" src={cld} /></th>
               <th>%</th>
-              {forecast[model].cloudcover.map((data) => (
+              {peak.forecast[model].cloudcover.map((data) => (
                 <td key={uuidv4()}>{data}</td>
               ))}
             </tr>
