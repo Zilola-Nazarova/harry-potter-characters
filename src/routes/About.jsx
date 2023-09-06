@@ -28,7 +28,9 @@ const About = () => {
         </li>
       </ul>
       <p>You can swith the displayed forecast to show information according to ICON or GFS forecast models.</p>
+      <p>Every page containing the weather data displays information about the last update under the navigation bar.</p>
       <p>The navigation bar has Models button with links to information about main forecast models: ICON and GFS</p>
+      
       <div className={styles.credits}>
         <h3 className={styles.bright}>thanks</h3>
         <p>Weather information by <a target="_blank" href="https://open-meteo.com/">open-meteo.com</a> API</p>
