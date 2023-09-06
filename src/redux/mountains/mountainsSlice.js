@@ -49,31 +49,25 @@ export const mountainsSlice = createSlice({
               current_weather: action.payload.current_weather,
               forecast: {
                 intervals: action.payload.hourly.time,
-                forecast_time: action.payload.hourly.time.map((date) => {
-                  date.split("T").pop();
-                }),
-                forecast_day: action.payload.hourly.time.map((date) => {
-                  date.split("T")[0];
-                }),
                 icon: {
                   temperature: action.payload.hourly.temperature_2m_icon_seamless,
                   precipitation: action.payload.hourly.precipitation_icon_seamless,
                   windspeed: action.payload.hourly.windspeed_10m_icon_seamless,
-                  cloudcover: action.payload.hourly.cloudcover_icon_seamless
+                  cloudcover: action.payload.hourly.cloudcover_icon_seamless,
                 },
                 gfs: {
                   temperature: action.payload.hourly.temperature_2m_gfs_seamless,
                   precipitation: action.payload.hourly.precipitation_gfs_seamless,
                   windspeed: action.payload.hourly.windspeed_10m_gfs_seamless,
-                  cloudcover: action.payload.hourly.cloudcover_gfs_seamless
-                }
+                  cloudcover: action.payload.hourly.cloudcover_gfs_seamless,
+                },
               },
-              time: action.payload.current_weather.time.split("T").pop(),
-              date: action.payload.current_weather.time.split("T")[0],
+              time: action.payload.current_weather.time.split('T').pop(),
+              date: action.payload.current_weather.time.split('T')[0],
             };
           }
           return peak;
-        })
+        });
       })
       .addCase(getWeather.rejected, (state, action) => {
         state.isLoading = false;

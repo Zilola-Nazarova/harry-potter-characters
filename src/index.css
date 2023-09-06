@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
   min-width: 350px;
   background-color: rgb(67, 104, 175);
 }
@@ -31,5 +32,5 @@ html,body {
   font-family: 'Lato', sans-serif;
   font-size: 1.2rem;
   text-align: center;
-  margin: auto
+  margin: auto;
 }

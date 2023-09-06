@@ -1,38 +1,36 @@
-import { useSelector } from 'react-redux';
-import styles from '@/styles/MountainsList.module.css';
-import { Link } from "react-router-dom";
-import { BsArrowRightCircle } from 'react-icons/bs';
-import weatherCodes from '@/database/weatherCodes';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
+import { BsArrowRightCircle } from 'react-icons/bs';
+import styles from '@/styles/MountainsList.module.css';
+import weatherCodes from '@/database/weatherCodes';
 
 const MountainsList = () => {
   const { mountains, isLoading, error } = useSelector((store) => store.mountains);
-  const [inputText, setInputText] = useState("");
+  const [inputText, setInputText] = useState('');
 
-  let inputHandler = (e) => {
-    //convert input text to lower case
-    var lowerCase = e.target.value.toLowerCase();
+  const inputHandler = (e) => {
+    // convert input text to lower case
+    const lowerCase = e.target.value.toLowerCase();
     setInputText(lowerCase);
   };
 
   const filteredMountains = mountains.filter((peak) => {
-    //if no input the return the original
+    // if no input the return the original
     if (inputText === '') {
       return peak;
     }
-    //return the item which contains the user input
-    else {
-      return peak.name.toLowerCase().includes(inputText)
-    }
+    // return the item which contains the user input
+    return peak.name.toLowerCase().includes(inputText);
   });
-  
+
   return (
     <>
       <div className={styles.search}>
         <h3>mountain peaks</h3>
         <input
-          placeholder='search...'
+          placeholder="search..."
           onChange={inputHandler}
         />
       </div>
@@ -63,16 +61,19 @@ const MountainsList = () => {
                 className={styles.card}
               >
                 <Link to={`details/${peak.name}`}>
-                  <BsArrowRightCircle className={styles.icon}/>
-                  <img src={peak.image}></img>
+                  <BsArrowRightCircle className={styles.icon} />
+                  <img alt="mountain peak" src={peak.image} />
                   <div>
                     <h4 className={styles.name}>{peak.name}</h4>
                     <span className={styles.elevation}>{peak.elevation}</span>
                     <p className={styles.code}>
-                      <img alt={peak.current_weather.weathercode}src={weatherCodes[peak.current_weather.weathercode]}></img>
+                      <img
+                        alt={peak.current_weather.weathercode}
+                        src={weatherCodes[peak.current_weather.weathercode]}
+                      />
                       {/* <span>code {peak.current_weather.weathercode}</span> */}
                     </p>
-                  </div>      
+                  </div>
                 </Link>
               </li>
             ))}
@@ -80,7 +81,7 @@ const MountainsList = () => {
         </>
       )}
     </>
-  )
-}
+  );
+};
 
 export default MountainsList;

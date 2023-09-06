@@ -45,7 +45,6 @@ table {
   border-collapse: collapse;
   width: 100%;
   font-family: 'Lato', sans-serif;
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   font-weight: 300;
 }
 
@@ -55,7 +54,7 @@ table {
 }
 
 td {
-  padding: 0.5rem 0px;
+  padding: 0.5rem 0;
   text-align: center;
   border-bottom: 1px solid #5688e7;
   justify-self: center;

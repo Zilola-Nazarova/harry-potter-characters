@@ -7,6 +7,7 @@
 
 .gfs > h2,
 .icon > h2 {
+  background-color: rgb(86, 136, 231);
   font-size: 1.2rem;
   text-transform: uppercase;
   padding: 1rem 1rem;
@@ -32,11 +33,6 @@
 .icon li {
   margin-left: 1rem;
   list-style-type: square;
-}
-
-.gfs h2,
-.icon h2 {
-  background-color: rgb(86, 136, 231);
 }
 
 .gfs p:first-child,

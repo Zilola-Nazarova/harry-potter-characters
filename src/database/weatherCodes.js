@@ -27,6 +27,6 @@ const weatherCodes = {
   95: 'src/assets/code/95.svg',
   96: 'src/assets/code/96.svg',
   99: 'src/assets/code/96.svg',
-}
+};
 
 export default weatherCodes;

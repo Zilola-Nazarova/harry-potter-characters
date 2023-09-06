@@ -1,7 +1,7 @@
 const mountainsData = [
   {
     name: 'Greater Chimgan',
-    latitude: 41.4951900, 
+    latitude: 41.4951900,
     longitude: 70.0586718,
     elevation: 3309.6,
     image: 'src/assets/mnt/mnt_01.svg',
@@ -10,11 +10,11 @@ const mountainsData = [
       windspeed: null,
       windderection: null,
       time: null,
-    }
+    },
   },
   {
     name: 'Karakush',
-    latitude: 41.2477890, 
+    latitude: 41.2477890,
     longitude: 70.3391467,
     elevation: 3864.3,
     image: 'src/assets/mnt/mnt_02.svg',
@@ -23,7 +23,7 @@ const mountainsData = [
       windspeed: null,
       windderection: null,
       time: null,
-    }
+    },
   },
   {
     name: 'Babaitag',
@@ -36,7 +36,7 @@ const mountainsData = [
       windspeed: null,
       windderection: null,
       time: null,
-    }
+    },
   },
   {
     name: 'Kizilbash',
@@ -49,7 +49,7 @@ const mountainsData = [
       windspeed: null,
       windderection: null,
       time: null,
-    }
+    },
   },
   {
     name: 'Tavalgan',
@@ -62,7 +62,7 @@ const mountainsData = [
       windspeed: null,
       windderection: null,
       time: null,
-    }
+    },
   },
   {
     name: 'Adelunga',
@@ -75,7 +75,7 @@ const mountainsData = [
       windspeed: null,
       windderection: null,
       time: null,
-    }
+    },
   },
   {
     name: 'Xodja Gur Gur Ota',
@@ -88,7 +88,7 @@ const mountainsData = [
       windspeed: null,
       windderection: null,
       time: null,
-    }
+    },
   },
   {
     name: 'Hazret Sultan',
@@ -101,8 +101,8 @@ const mountainsData = [
       windspeed: null,
       windderection: null,
       time: null,
-    }
+    },
   },
-]
+];
 
 export default mountainsData;

@@ -16,18 +16,17 @@
 
 .contacts {
   display: flex;
-
 }
 
 .contacts a {
   color: #fff;
 }
 
-.contacts a:first-child{
+.contacts a:first-child {
   padding-right: 1rem;
   border-right: 1px solid #fff;
 }
 
-.contacts a:last-child{
+.contacts a:last-child {
   padding-left: 1rem;
 }

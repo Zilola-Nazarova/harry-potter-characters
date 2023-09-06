@@ -25,10 +25,6 @@
   background-color: rgb(67, 104, 175);
 }
 
-.about > ul:first-of-type {
-  padding: 0 2rem;
-}
-
 li.bright {
   padding-left: 1rem;
   list-style-position: inside;
@@ -54,6 +50,10 @@ li.bright li:first-child {
 
 li.bright li:last-child {
   padding-bottom: 0.5rem;
+}
+
+.about > ul:first-of-type {
+  padding: 0 2rem;
 }
 
 .bright {

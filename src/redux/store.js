@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import mountainsReducer from '@/redux/mountains/mountainsSlice';
 import { logger } from 'redux-logger';
+import mountainsReducer from '@/redux/mountains/mountainsSlice';
 
 const store = configureStore({
   reducer: {

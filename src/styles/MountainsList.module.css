@@ -37,6 +37,12 @@
   color: #2d4573;
 }
 
+.card {
+  min-height: 50vw;
+  padding: 0.8rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .card:nth-child(4n+1),
 .card:nth-child(4n+0) {
   background-color: #4368af;
@@ -45,13 +51,6 @@
 .card:nth-child(4n+2),
 .card:nth-child(4n+3) {
   background-color: #3f62a6;
-}
-
-.card {
-  min-height: 50vw;
-  padding: 0.8rem;
-  /* font-family: 'Lato', sans-serif; */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .card a {
@@ -101,7 +100,7 @@
 }
 
 .code img {
-  margin: 0;
+  margin: 0.25rem 0 0;
   height: 1.5rem;
 }
 

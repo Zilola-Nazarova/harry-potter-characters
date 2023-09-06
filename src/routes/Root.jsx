@@ -1,17 +1,17 @@
-import Header from '@/components/Header'
-import { Outlet } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { getWeather } from "@/redux/mountains/mountainsSlice";
 import { useEffect } from 'react';
-import mountainsData from '@/database/mountainsData';
-import Footer from '@/components/Footer';
+import { Outlet } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { getWeather } from '../redux/mountains/mountainsSlice';
+import mountainsData from '../database/mountainsData';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 const Root = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     mountainsData.forEach(
-      (peak) => dispatch(getWeather(peak))
+      (peak) => dispatch(getWeather(peak)),
     );
   }, [dispatch]);
 
@@ -23,7 +23,7 @@ const Root = () => {
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
 export default Root;

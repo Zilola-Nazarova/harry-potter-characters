@@ -1,13 +1,11 @@
-import MountainsList from "@/components/MountainsList";
-import MainData from '@/components/MainData';
+import MountainsList from '../components/MountainsList';
+import MainData from '../components/MainData';
 
-const Home = () => {
-  return (
-    <>
-      <MainData />
-      <MountainsList />
-    </>
-  )
-}
+const Home = () => (
+  <>
+    <MainData />
+    <MountainsList />
+  </>
+);
 
 export default Home;
