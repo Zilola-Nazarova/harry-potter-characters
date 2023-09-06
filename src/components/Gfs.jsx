@@ -3,7 +3,7 @@ import styles from '@/styles/Models.module.css'
 const Gfs = () => {
   return (
     <div className={styles.gfs}>
-      <p>See the full article on <a href="https://windy.app/blog/what-is-gfs-weather-forecast-model.html">Windy.app</a></p>
+      <p>See the full article on <a href="https://windy.app/blog/what-is-gfs-weather-forecast-model.html" target="_blank">Windy.app</a></p>
       <h2>What is GFS27 weather forecast model?</h2>
       <p>The GFS (Global Forecast System) is the most well-known global weather model and it&rsquo;s updated every six hours&nbsp;produced by the National Centers for Environmental Prediction (NCEP) of the United States National Oceanic and Atmospheric Administration (NOAA).</p>
       <p>It is actually made up of 4 separate models which work together to paint an accurate picture of weather conditions: atmospheric, ocean, land/soil and sea ice models.</p>

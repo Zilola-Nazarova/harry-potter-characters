@@ -3,7 +3,7 @@ import styles from '@/styles/Models.module.css'
 const Icon = () => {
   return (
     <div className={styles.icon}>
-      <p>See the full article on <a href="https://windy.app/blog/what-is-icon-weather-model-forecast.html">Windy.app</a></p>
+      <p>See the full article on <a href="https://windy.app/blog/what-is-icon-weather-model-forecast.html" target="_blank">Windy.app</a></p>
       <h2>What is ICON weather forecast model?</h2>
       <p>The ICON (Icosahedral Nonhydrostatic) is a suit of models created by the German national weather service or DWD (Deutscher Wetterdienst). There are at least three major ICON models: ICON-D2 for Central Europe, ICON7 for Europe as a whole, and ICON13 for the world. So it is both hyper-local, regional and global weather forecast model.</p>
       <ul>
