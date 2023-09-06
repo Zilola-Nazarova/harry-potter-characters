@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import styles from '@/styles/MountainsList.module.css';
 import { Link } from "react-router-dom";
 import { BsArrowRightCircle } from 'react-icons/bs';
-import mountainsData from '@/database/mountainsData';
+import weatherCodes from '@/database/weatherCodes';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -30,9 +30,9 @@ const MountainsList = () => {
   return (
     <>
       <div className={styles.search}>
-        <h3>current weather on peaks</h3>
+        <h3>mountain peaks</h3>
         <input
-          placeholder='search a mountain...'
+          placeholder='search...'
           onChange={inputHandler}
         />
       </div>
@@ -68,7 +68,10 @@ const MountainsList = () => {
                   <div>
                     <h4 className={styles.name}>{peak.name}</h4>
                     <span className={styles.elevation}>{peak.elevation}</span>
-                    <p className={styles.code}>weather code {peak.current_weather.weathercode}</p>
+                    <p className={styles.code}>
+                      <img alt={peak.current_weather.weathercode}src={weatherCodes[peak.current_weather.weathercode]}></img>
+                      {/* <span>code {peak.current_weather.weathercode}</span> */}
+                    </p>
                   </div>      
                 </Link>
               </li>
