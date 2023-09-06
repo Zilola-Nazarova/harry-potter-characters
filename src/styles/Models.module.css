@@ -5,13 +5,19 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
 .gfs > h2,
-
-.icon > h2,
-.icon > ul {
+.icon > h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
   padding: 1rem 1rem;
+  letter-spacing: 0.2px;
+  word-spacing: 3px;
 }
+
+.gfs h2:last-of-type {
+  font-size: 1rem;
+}
+
 .icon > p,
 .gfs > p {
   padding: 0 1rem;
@@ -19,7 +25,8 @@
 }
 
 .icon > ul {
-  background-color: rgb(53, 84, 139);
+  padding: 1rem 1rem;
+  background-color: rgb(63, 98, 166);
 }
 
 .icon li {
@@ -34,6 +41,8 @@
 
 .gfs p:first-child,
 .icon p:first-child {
+  padding: 1rem 1rem;
+  margin: 0;
   background-color: rgb(53, 84, 139);
 }
 
