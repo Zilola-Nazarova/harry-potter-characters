@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { getWeather } from "@/redux/mountains/mountainsSlice";
 import { useEffect } from 'react';
 import mountainsData from '@/database/mountainsData';
+import Footer from '@/components/Footer';
 
 const Root = () => {
   const dispatch = useDispatch();
@@ -20,6 +21,7 @@ const Root = () => {
       <div id="outlet">
         <Outlet />
       </div>
+      <Footer />
     </>
   )
 }
