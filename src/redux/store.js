@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { logger } from 'redux-logger';
-import gpCharactersReducer from './mountains/mountainsSlice';
+import gpCharactersReducer from './gpCharacters/gpCharactersSlice';
 
 const store = configureStore({
   reducer: {

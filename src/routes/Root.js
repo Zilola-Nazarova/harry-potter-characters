@@ -4,7 +4,7 @@ import {
   Routes,
 } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { getGPCharacters } from '../redux/mountains/mountainsSlice';
+import { getGPCharacters } from '../redux/gpCharacters/gpCharactersSlice';
 import ErrorPage from './ErrorPage';
 import Details from './Details';
 import Home from './Home';
