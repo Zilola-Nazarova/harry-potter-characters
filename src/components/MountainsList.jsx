@@ -63,16 +63,16 @@ const MountainsList = () => {
                 <Link to={`details/${peak.name}`}>
                   <BsArrowRightCircle className={styles.icon} />
                   <img alt="mountain peak" src={peak.image} />
-                  <div>
-                    <h4 className={styles.name}>{peak.name}</h4>
-                    <span className={styles.elevation}>{peak.elevation}</span>
-                    <p className={styles.code}>
-                      <img
-                        alt={peak.current_weather.weathercode}
-                        src={weatherCodes[peak.current_weather.weathercode]}
-                      />
-                      {/* <span>code {peak.current_weather.weathercode}</span> */}
-                    </p>
+                  <div className={styles.info}>
+                    <img
+                      className={styles.code}
+                      alt={peak.current_weather.weathercode}
+                      src={weatherCodes[peak.current_weather.weathercode]}
+                    />
+                    <div>
+                      <h4 className={styles.name}>{peak.name}</h4>
+                      <span className={styles.elevation}>{peak.elevation}</span>
+                    </div>
                   </div>
                 </Link>
               </li>
