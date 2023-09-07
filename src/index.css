@@ -27,7 +27,8 @@ body {
 }
 
 .loading,
-.error {
+.error,
+#error-page {
   color: #fff;
   font-family: 'Lato', sans-serif;
   font-size: 1.2rem;
