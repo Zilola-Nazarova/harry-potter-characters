@@ -1,10 +1,8 @@
-import MountainsList from '../components/MountainsList';
-import MainData from '../components/MainData';
+import CharactersList from '../components/CharactersList';
 
 const Home = () => (
   <>
-    <MainData />
-    <MountainsList />
+    <CharactersList />
   </>
 );
 

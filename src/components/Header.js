@@ -20,7 +20,7 @@ const Header = () => {
           <li className={styles.title}>
             <NavLink to="/">
               <h1>
-                mountains forecast
+                home
               </h1>
             </NavLink>
           </li>
@@ -30,26 +30,9 @@ const Header = () => {
             </NavLink>
           </li>
           <li ref={ref}>
-            <button
-              type="button"
-              onClick={() => setDropdown((prev) => !prev)}
-            >
+            <NavLink to="/models">
               models
-            </button>
-            {dropdown && (
-              <ul>
-                <li>
-                  <NavLink to="/models/icon">
-                    ICON
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/models/gfs">
-                    GFS
-                  </NavLink>
-                </li>
-              </ul>
-            )}
+            </NavLink>
           </li>
         </ul>
       </nav>

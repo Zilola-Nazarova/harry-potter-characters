@@ -4,8 +4,7 @@ import {
   Routes,
 } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { getWeather } from '../redux/mountains/mountainsSlice';
-import mountainsData from '../database/mountainsData';
+import { getGPCharacters } from '../redux/mountains/mountainsSlice';
 import ErrorPage from './ErrorPage';
 import Details from './Details';
 import Home from './Home';
@@ -16,11 +15,7 @@ import Layout from './Layout';
 const Root = () => {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    mountainsData.forEach(
-      (peak) => dispatch(getWeather(peak)),
-    );
-  }, [dispatch]);
+  useEffect(() => { dispatch(getGPCharacters()); }, [dispatch]);
 
   return (
     <>
@@ -29,7 +24,7 @@ const Root = () => {
           <Route index element={<Home />} />
           <Route path="details/:id" element={<Details />} />
           <Route path="about" element={<About />} />
-          <Route path="models/:id" element={<Models />} />
+          <Route path="models" element={<Models />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>

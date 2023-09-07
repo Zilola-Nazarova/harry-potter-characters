@@ -1,13 +1,5 @@
-import { useParams } from 'react-router';
-import Icon from '../components/Icon';
-import Gfs from '../components/Gfs';
-
-const Models = () => {
-  const { id } = useParams();
-
-  return (
-    (id === 'icon') ? <Icon /> : <Gfs />
-  );
-};
+const Models = () => (
+  <p>Here is some info</p>
+);
 
 export default Models;

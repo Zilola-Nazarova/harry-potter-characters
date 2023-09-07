@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { logger } from 'redux-logger';
-import mountainsReducer from './mountains/mountainsSlice';
+import gpCharactersReducer from './mountains/mountainsSlice';
 
 const store = configureStore({
   reducer: {
-    mountains: mountainsReducer,
+    gpCharacters: gpCharactersReducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
