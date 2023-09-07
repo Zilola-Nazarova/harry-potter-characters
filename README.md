@@ -1,7 +1,8 @@
 <h3 align="center"><b>Mountains Forecast</b></h3>
 
-<p align="center">Mountains Forecast lists down the mountains located in Uzbekistan. Users can see current weather conditions and forecast data for each peak. Webapp retrieves data from open-meteo.com API. Built with React.</p>
+<p align="center">Harry Potter Lybrary is a site that lists down main Harry Potter characters with the corresponding data. Webapp retrieves data from hp-api.onrender.com API. Built with React.</p>
 
+      
 <a name="readme-top"></a> 
 
 # 📗 Table of Contents
@@ -29,27 +30,22 @@
 
 # 📖 "Mountains Forecast" <a name="about-project"></a>
 
-**Mountains Forecast** is a single-page application (SPA, further 'webapp') that displays current weather and forecast data retrieved from open-meteo.com API.
+**Harry Potter Library** is a site that lists down main Harry Potter characters with the following data:
 
-Using this webapp users can:
+- Name
+- House
+- Alive/Not alive
+- Character's portrait
 
-- search for a particular mountain from the local database
-- see the current weather on each mountain selected
-- see hourly forecasts for each mountain selected
-- switch the displayed forecast to show information according to ICON or GFS forecast models
-- read articles about the following forecast models: ICON and GFS
+When a character is selected, more data about this character
+is displayed such as:
+   
+- Wand properties
+- Patronus animal
+- Date of birth
+- Ancestry, etc.
 
-Webapp consists of Home, Details, Models (ICON and GFS) and About pages:
-
-- Homepage lists down the mountains located in Uzbekistan with the following data for each mountain:
-  - elevation (in m)
-  - weather code (index)
-
-- Details page is displayed when a particular mountain is selected on the Homepage. It contains current weather and hourly forecasts for a selected mountain. Users can switch between ICON and GFS forecast models to display the corresponding forecast information.
-
-- ICON and GFS pages provide useful information about the corresponding forecast model and can be visited by clicking on the Models button
-
-- About page contains essential information about this webapp and credits
+The home page has a search bar where you can type your character's name to find the information faster.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -58,26 +54,24 @@ Webapp consists of Home, Details, Models (ICON and GFS) and About pages:
 
 <details>
   <summary>Client</summary>
-  <ul>
-    <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML">HTML</a></li>
-    <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript">JavaScript</a></li>
-    <li><a href="https://react.dev/">React</a></li>
-    <li><a href="https://redux-toolkit.js.org/">Redux Toolkit</a></li>
-  </ul>
+    <ul>
+      <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML">HTML</a></li>
+      <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS</a></li>
+      <li><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript">JavaScript</a></li>
+      <li><a href="https://react.dev/">React</a></li>
+      <li><a href="https://redux-toolkit.js.org/">Redux</a></li>
+    </ul>
   <summary>Server</summary>
-  <ul>
-    <li><a href="https://render.com/">Render.com</a></li>
-  </ul>
+    <ul>
+      <a href="https://render.com/">Render.com</a>
+    </ul>
 </details>
 
 
 ### Key Features <a name="key-features"></a>
 
-- **search for a particular mountain**
-- **see current weather on selected mountain**
-- **see hourly forecasts for selected mountain**
-- **switch forecast models**
+- **search for a particular Harry Potter character**
+- **see detailed information about each character**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,13 +169,6 @@ Your app is ready to be deployed!
 
 Contributions, issues, and feature requests are welcomed!
 
-Currently, I have to hardcode a database of mountain peaks with the following information:
-- name
-- elevation
-- coordinates
-
-Due to lack of time, I was only able to add a few mountains, so I would appreciate it if anyone shared a complete database of mountain peaks located in Uzbekistan.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -194,8 +181,7 @@ If you like this project just star it!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Weather information by <a target="_blank" href="https://open-meteo.com/">open-meteo.com</a> API
-- Map of Uzbekistan by <a target="_blank" href="https://vemaps.com/">Vemaps.com</a>
+- Harry Potter characters information by <a target="_blank" href="https://hp-api.onrender.com/">hp-api.onrender.com</a> API
 - Original design idea by <a target="_blank" href="https://www.behance.net/sakwadesignstudio">Nelson Sakwa</a>
 
 I would like to thank the Microverse program for the knowledge and skills I have acquired in Modules 1, 2 and 3.
@@ -207,9 +193,6 @@ I am grateful to all previous project reviewers for their advice. Thanks to them
 
 ## ❓ FAQ <a name="faq"></a>
 
-- **Why my mountain is not listed in the app?**
-
-  - The mountains list of this app is not complete. I added only a few mountains located in Uzbekistan due to lack of time.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
