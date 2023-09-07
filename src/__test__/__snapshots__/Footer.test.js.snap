@@ -5,13 +5,7 @@ exports[`Test Footer render Test Footer 1`] = `
   className="footer"
 >
   <p>
-    The weather forecast and all info about spots is provided for personal non-commercial use.
-  </p>
-  <p>
-    Mountains Forecast does not promise any specific results from the use of its service.
-  </p>
-  <p>
-    © 2023 Mountains Forecast
+    © 2023 Harry Potter Library
   </p>
   <div
     className="contacts"

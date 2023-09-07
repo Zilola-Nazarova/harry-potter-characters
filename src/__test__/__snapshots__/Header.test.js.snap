@@ -46,9 +46,7 @@ exports[`Test Header render Test Header 1`] = `
           href="/"
           onClick={[Function]}
         >
-          <h1>
-            mountains forecast
-          </h1>
+          home
         </a>
       </li>
       <li>
@@ -60,14 +58,6 @@ exports[`Test Header render Test Header 1`] = `
         >
           about
         </a>
-      </li>
-      <li>
-        <button
-          onClick={[Function]}
-          type="button"
-        >
-          models
-        </button>
       </li>
     </ul>
   </nav>

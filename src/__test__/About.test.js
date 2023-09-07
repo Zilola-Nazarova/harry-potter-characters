@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
-import Icon from '../components/Icon';
+import About from '../routes/About';
 
-describe('Test Icon render', () => {
-  test('Test Icon', () => {
+describe('Test About render', () => {
+  test('Test About', () => {
     const component = renderer.create(
       <BrowserRouter>
-        <Icon />
+        <About />
       </BrowserRouter>,
     );
     expect(component).toMatchSnapshot();

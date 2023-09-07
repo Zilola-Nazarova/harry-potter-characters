@@ -21,11 +21,6 @@ const Header = () => (
             about
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/models">
-            models
-          </NavLink>
-        </li>
       </ul>
     </nav>
   </header>
