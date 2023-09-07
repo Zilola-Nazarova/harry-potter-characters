@@ -53,7 +53,7 @@ const MountainsList = () => {
               No matching mountains found.
             </p>
           )}
-          <p>{JSON.stringify(mountains)}</p>
+
           <ul className={styles.list}>
             {filteredMountains.sort((a, b) => a.name.localeCompare(b.name)).map((peak) => (
               <li
