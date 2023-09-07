@@ -35,7 +35,12 @@ const CharacterDetails = () => {
             <tr>
               <td>Other names:</td>
               <td>
-                {person.alternate_names.map((i) => i)}
+                {person.alternate_names.map((i) => (
+                  <>
+                    {i}
+                    <br />
+                  </>
+                ))}
               </td>
             </tr>
             <tr>
