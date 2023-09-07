@@ -29,25 +29,25 @@
 
 # 📖 "Mountains Forecast" <a name="about-project"></a>
 
-**Mountains Forecast** is a single-page application (SPA, further 'webapp') that displays a current weather and forecast data retrieved from open-meteo.com API.
+**Mountains Forecast** is a single-page application (SPA, further 'webapp') that displays current weather and forecast data retrieved from open-meteo.com API.
 
 Using this webapp users can:
 
-- search for a particular mountain from local databse
-- see current weather on each mountain selected
+- search for a particular mountain from the local database
+- see the current weather on each mountain selected
 - see hourly forecasts for each mountain selected
 - switch the displayed forecast to show information according to ICON or GFS forecast models
-- read articles about following forecast models: ICON and GFS
+- read articles about the following forecast models: ICON and GFS
 
-Webapp consists of Home, Detals, Models (ICON and GFS) and About pages:
+Webapp consists of Home, Details, Models (ICON and GFS) and About pages:
 
 - Homepage lists down the mountains located in Uzbekistan with the following data for each mountain:
   - elevation (in m)
   - weather code (index)
 
-- Details page is displayed when a particular mountain is selected on Homepage. It contains current weather and hourly forecasts for a selected mountain. Users can swith between ICON and GFS forecast models to display the corresponding forecast information.
+- Details page is displayed when a particular mountain is selected on the Homepage. It contains current weather and hourly forecasts for a selected mountain. Users can switch between ICON and GFS forecast models to display the corresponding forecast information.
 
-- ICON and GFS pages provide useful information about the corresponding forecast model and can be visited by clicking on Models button
+- ICON and GFS pages provide useful information about the corresponding forecast model and can be visited by clicking on the Models button
 
 - About page contains essential information about this webapp and credits
 
@@ -75,7 +75,7 @@ Webapp consists of Home, Detals, Models (ICON and GFS) and About pages:
 ### Key Features <a name="key-features"></a>
 
 - **search for a particular mountain**
-- **see current weather on selected ountain**
+- **see current weather on selected mountain**
 - **see hourly forecasts for selected mountain**
 - **switch forecast models**
 
@@ -84,7 +84,7 @@ Webapp consists of Home, Detals, Models (ICON and GFS) and About pages:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Visit this link to see project: https://mountainsforecast-uz.onrender.com/
+- Visit this link to see this project: https://mountainsforecast-uz.onrender.com/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,9 +95,9 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run and modify this project you need:
+To run and modify this project you need:
 
-- gitHub account;
+- GitHub account;
 - git installed on your OS;
 - VSCode (or another code editor);
 - modern browser (supporting HTML5 and CSS3) is highly recommended;
@@ -134,7 +134,7 @@ There are tests using libraries(React Testing Library and Jest).
 To launch the test runner in the interactive watch mode:
 > npm test
 
-You can also check linter errors by running this commands:
+You can also check linter errors by running these commands:
 > npx stylelint "**/*.{css,scss}"<br />
 > npx eslint "**/*.{js,jsx}"
 
@@ -175,12 +175,12 @@ Your app is ready to be deployed!
 
 Contributions, issues, and feature requests are welcomed!
 
-Currently, I have to hardcode a database of mountain peaks with following information:
+Currently, I have to hardcode a database of mountain peaks with the following information:
 - name
 - elevation
 - coordinates
 
-Due to lack of time I was only able to add few mountains, so I would appreciate if anyone shared a complete database of mountain peaks located in Uzbekistan.
+Due to lack of time, I was only able to add a few mountains, so I would appreciate it if anyone shared a complete database of mountain peaks located in Uzbekistan.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -198,9 +198,9 @@ If you like this project just star it!
 - Map of Uzbekistan by <a target="_blank" href="https://vemaps.com/">Vemaps.com</a>
 - Original design idea by <a target="_blank" href="https://www.behance.net/sakwadesignstudio">Nelson Sakwa</a>
 
-I would like to thank Microverse program for the knowledge and skills I have acquired in Modules 1, 2 and 3.
+I would like to thank the Microverse program for the knowledge and skills I have acquired in Modules 1, 2 and 3.
 
-I am grateful for all previous project reviewers for their advice. Thanks to them I could build this app.
+I am grateful to all previous project reviewers for their advice. Thanks to them I could build this app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -209,7 +209,7 @@ I am grateful for all previous project reviewers for their advice. Thanks to the
 
 - **Why my mountain is not listed in the app?**
 
-  - The mountains list of this app is note complete. I added only few mountains located in Uzbekistan due to lack of time.
+  - The mountains list of this app is not complete. I added only a few mountains located in Uzbekistan due to lack of time.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

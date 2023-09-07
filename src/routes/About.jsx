@@ -53,6 +53,7 @@ const About = () => (
       <h3 className={styles.bright}>thanks</h3>
       <p>
         Weather information by
+        {' '}
         <a target="_blank" rel="noreferrer" href="https://open-meteo.com/">
           open-meteo.com
         </a>
@@ -60,6 +61,7 @@ const About = () => (
       </p>
       <p>
         Map of Uzbekistan by
+        {' '}
         <a target="_blank" rel="noreferrer" href="https://vemaps.com/">
           Vemaps.com
         </a>
@@ -67,6 +69,7 @@ const About = () => (
       </p>
       <p>
         Original design idea by
+        {' '}
         <a target="_blank" rel="noreferrer" href="https://www.behance.net/sakwadesignstudio">
           Nelson Sakwa
         </a>
