@@ -15,7 +15,7 @@ const CharactersList = () => {
   };
 
   return (
-    <>
+    <div className={styles.home}>
       <div className={styles.search}>
         <h1>Harry Potter Characters</h1>
         <input
@@ -36,7 +36,7 @@ const CharactersList = () => {
       {(filtered) && (
         <>
           {(filtered.length === 0) && (
-            <p className={styles.error}>
+            <p className="error">
               Something went wrong!
               <br />
               No characters found.
@@ -66,7 +66,7 @@ const CharactersList = () => {
           </ul>
         </>
       )}
-    </>
+    </div>
   );
 };
 
