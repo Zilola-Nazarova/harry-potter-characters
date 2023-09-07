@@ -1,4 +1,4 @@
-import styles from '@/styles/Models.module.css';
+import styles from '../styles/Models.module.css';
 
 const Gfs = () => (
   <div className={styles.gfs}>

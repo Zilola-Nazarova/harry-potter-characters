@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io';
-import styles from '@/styles/Header.module.css';
+import styles from '../styles/Header.module.css';
 import useOnClickOutside from './useOnClickOutside';
 
 const Header = () => {

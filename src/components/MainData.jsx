@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import uz from '../assets/uz-03.svg';
 import mountainsData from '../database/mountainsData';
-import styles from '@/styles/MainData.module.css';
+import styles from '../styles/MainData.module.css';
 
 const MainData = () => {
   const { id } = useParams();

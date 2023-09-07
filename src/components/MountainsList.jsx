@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { BsArrowRightCircle } from 'react-icons/bs';
-import styles from '@/styles/MountainsList.module.css';
+import styles from '../styles/MountainsList.module.css';
 import weatherCodes from '../database/weatherCodes';
 
 const MountainsList = () => {

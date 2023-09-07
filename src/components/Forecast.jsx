@@ -2,11 +2,11 @@ import { useParams } from 'react-router';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import styles from '@/styles/Forecast.module.css';
-import cld from '@/assets/weather/cld.svg';
-import rn from '@/assets/weather/rn.svg';
-import tmp from '@/assets/weather/tmp.svg';
-import wng from '@/assets/weather/wng.svg';
+import styles from '../styles/Forecast.module.css';
+import cld from '../assets/weather/cld.svg';
+import rn from '../assets/weather/rn.svg';
+import tmp from '../assets/weather/tmp.svg';
+import wng from '../assets/weather/wng.svg';
 
 const Forecast = () => {
   const { id } = useParams();
