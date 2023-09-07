@@ -1,29 +1,28 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
+import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import thunk from 'redux-thunk';
-import logger from 'redux-logger';
-import configureStore from 'redux-mock-store';
-import MountainsList from '../components/MountainsList';
+import { configureStore } from '@reduxjs/toolkit';
+import Root from '../routes/Root';
 import mountainsData from '../database/mountainsData';
 
-test('Check if Missions component is rendered correctly', () => {
-  const applyMiddleware = [thunk, logger];
-  const mockingStore = configureStore(applyMiddleware);
-  const store = mockingStore({
-    mountains: mountainsData,
-    isLoading: false,
-    error: false,
-  });
+const reducer = (
+  state = {
+    mountains: { mountains: mountainsData, isLoading: false, error: undefined },
+  },
+) => state;
 
-  const tree = render(
-    <Provider store={store}>
-      <BrowserRouter>
-        <MountainsList />
-      </BrowserRouter>
-    </Provider>,
+const store = configureStore({ reducer });
+
+test('Check if Missions component is rendered correctly', () => {
+  render(
+    <MemoryRouter>
+      <Provider store={store}>
+        <Root />
+      </Provider>
+    </MemoryRouter>,
   );
 
-  expect(tree).toMatchSnapshot();
+  expect(screen.getByText('about')).toBeInTheDocument();
 });

@@ -54,6 +54,7 @@ exports[`Test Header render Test Header 1`] = `
       <li>
         <a
           className=""
+          data-testid="clickAbout"
           href="/about"
           onClick={[Function]}
         >

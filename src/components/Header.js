@@ -25,7 +25,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about">
+            <NavLink data-testid="clickAbout" to="/about">
               about
             </NavLink>
           </li>

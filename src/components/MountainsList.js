@@ -8,13 +8,22 @@ import weatherCodes from '../database/weatherCodes';
 
 const MountainsList = () => {
   const { mountains, isLoading, error } = useSelector((store) => store.mountains);
-  const [filteredMountains, setFilteredMountains] = useState([]);
+  const [inputText, setInputText] = useState('');
+
   const inputHandler = (e) => {
     // convert input text to lower case
-    const input = e.target.value.toLowerCase();
-    const filtered = mountains.filter((peak) => peak.name.toLowerCase().includes(input));
-    setFilteredMountains(filtered);
+    const lowerCase = e.target.value.toLowerCase();
+    setInputText(lowerCase);
   };
+
+  const filteredMountains = mountains.filter((peak) => {
+    // if no input the return the original
+    if (inputText === '') {
+      return peak;
+    }
+    // return the item which contains the user input
+    return peak.name.toLowerCase().includes(inputText);
+  });
 
   return (
     <>
@@ -44,7 +53,7 @@ const MountainsList = () => {
               No matching mountains found.
             </p>
           )}
-
+          <p>{JSON.stringify(mountains)}</p>
           <ul className={styles.list}>
             {filteredMountains.sort((a, b) => a.name.localeCompare(b.name)).map((peak) => (
               <li
