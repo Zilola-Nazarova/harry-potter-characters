@@ -11,7 +11,6 @@ const Details = () => {
 
   return (peak) ? (
     <>
-      <p>{peak.name}</p>
       <MainData />
       <Forecast />
     </>
