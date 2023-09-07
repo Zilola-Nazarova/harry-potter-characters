@@ -1,4 +1,5 @@
 .about {
+  flex: 2;
   background-color: rgb(67, 104, 175);
   color: #fff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -36,24 +37,9 @@ li.bright span {
   padding: 0.3rem 0;
 }
 
-li.bright ul {
+.about > ul {
+  padding: 0 3rem;
   background-color: rgb(63, 98, 166);
-  margin-left: -1rem;
-  padding-left: 2.5rem;
-  text-transform: lowercase;
-  list-style: none;
-}
-
-li.bright li:first-child {
-  padding-top: 0.5rem;
-}
-
-li.bright li:last-child {
-  padding-bottom: 0.5rem;
-}
-
-.about > ul:first-of-type {
-  padding: 0 2rem;
 }
 
 .bright {
