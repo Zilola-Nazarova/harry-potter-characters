@@ -29,9 +29,11 @@ export const gpCharactersSlice = createSlice({
     builder
       .addCase(getGPCharacters.pending, (state) => {
         state.isLoading = true;
+        state.error = false;
       })
       .addCase(getGPCharacters.fulfilled, (state, action) => {
         state.isLoading = false;
+        state.error = false;
         state.gpCharacters = action.payload.slice(0, 50);
       })
       .addCase(getGPCharacters.rejected, (state, action) => {

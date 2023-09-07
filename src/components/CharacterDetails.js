@@ -21,20 +21,22 @@ const CharacterDetails = () => {
   }
   return (person) && (
     <>
-      <h3 className={styles.peak_name}>
-        {person.name}
-      </h3>
-      <div className={styles.forecast}>
+      <h1>Harry Potter Characters</h1>
+      <div className={styles.details}>
         <img alt="Character portrait" src={person.image} />
         <table>
-          <tbody>
-            <tr>
+          <thead>
+            <tr className={styles.first_row}>
               <td>Name:</td>
               <td>{person.name}</td>
             </tr>
+          </thead>
+          <tbody>
             <tr>
               <td>Other names:</td>
-              <td>{person.alternative_names}</td>
+              <td>
+                {person.alternate_names.map((i) => i)}
+              </td>
             </tr>
             <tr>
               <td>Gender:</td>
@@ -65,7 +67,7 @@ const CharacterDetails = () => {
             </tr>
             <tr>
               <td>Wand:</td>
-              <td>{Object.keys(person.wand).map((prop) => prop)}</td>
+              <td>{Object.keys(person.wand).map((prop) => person.wand[prop])}</td>
             </tr>
           </tbody>
         </table>

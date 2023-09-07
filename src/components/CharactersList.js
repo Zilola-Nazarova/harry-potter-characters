@@ -35,7 +35,7 @@ const CharactersList = () => {
 
       {(filtered) && (
         <>
-          {(filtered.length === 0) && (
+          {(inputText !== '' && filtered.length === 0) && (
             <p className="error">
               Something went wrong!
               <br />
