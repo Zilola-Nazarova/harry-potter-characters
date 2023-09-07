@@ -26,7 +26,7 @@ const Forecast = () => {
       </p>
     );
   }
-  return (peak.forecast) && (
+  return (!isLoading && !error) && (
     <>
       <h3 className={styles.peak_name}>
         {peak.name}

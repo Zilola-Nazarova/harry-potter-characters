@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io';
 import styles from '../styles/Header.module.css';
 import useOnClickOutside from './useOnClickOutside';
@@ -8,27 +8,26 @@ const Header = () => {
   const [dropdown, setDropdown] = useState(false);
   const ref = useRef();
   useOnClickOutside(ref, dropdown, () => setDropdown(false));
-
   return (
     <header className={styles.header}>
       <nav className={styles.navigation}>
         <ul>
           <li className={styles.arrow}>
-            <Link to="/">
+            <NavLink to="/">
               <IoIosArrowBack />
-            </Link>
+            </NavLink>
           </li>
           <li className={styles.title}>
-            <Link to="/">
+            <NavLink to="/">
               <h1>
                 mountains forecast
               </h1>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">
+            <NavLink to="/about">
               about
-            </Link>
+            </NavLink>
           </li>
           <li ref={ref}>
             <button
@@ -40,14 +39,14 @@ const Header = () => {
             {dropdown && (
               <ul>
                 <li>
-                  <Link to="/models/icon">
+                  <NavLink to="/models/icon">
                     ICON
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/models/gfs">
+                  <NavLink to="/models/gfs">
                     GFS
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             )}
