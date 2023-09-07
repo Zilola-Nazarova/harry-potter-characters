@@ -84,7 +84,7 @@ Webapp consists of Home, Detals, Models (ICON and GFS) and About pages:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Visit this link to see project: 
+- Visit this link to see project: https://mountainsforecast-uz.onrender.com/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
