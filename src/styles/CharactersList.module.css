@@ -42,7 +42,7 @@
 }
 
 .card {
-  height: 80vw;
+  min-height: 50vw;
   padding: 0.8rem 1rem 1rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -75,7 +75,7 @@
 
 .info {
   text-align: end;
-  height: 4rem;
+  height: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

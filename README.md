@@ -78,7 +78,7 @@ The home page has a search bar where you can type your character's name to find 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Visit this link to see this project: https://mountainsforecast-uz.onrender.com/
+- Visit this link to see this project: https://harry-potter-characters.onrender.com/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +102,7 @@ To run and modify this project you need:
 Login to your GitHub account. Clone this repository to your desired folder:
 
 > cd my-folder
-> git clone git@github.com:Zilola-Nazarova/mountains-forecast-uz.git
+> git clone git@github.com:Zilola-Nazarova/harry-potter-characters.git
 
 ### Install
 

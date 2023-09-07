@@ -21,7 +21,7 @@ const CharacterDetails = () => {
   }
   return (person) && (
     <>
-      <h1>Harry Potter Characters</h1>
+      <h1 className={styles.title}>Harry Potter Characters</h1>
       <div className={styles.details}>
         <img alt="Character portrait" src={person.image} />
         <table>
@@ -50,7 +50,6 @@ const CharacterDetails = () => {
               <td>Date of birth:</td>
               <td>
                 {person.dateOfBirth}
-                {person.yearOfBirth}
               </td>
             </tr>
             <tr>
@@ -67,7 +66,16 @@ const CharacterDetails = () => {
             </tr>
             <tr>
               <td>Wand:</td>
-              <td>{Object.keys(person.wand).map((prop) => person.wand[prop])}</td>
+              <td>
+                {Object.keys(person.wand).map((prop) => (
+                  <>
+                    {prop}
+                    {': '}
+                    {person.wand[prop]}
+                    <br />
+                  </>
+                ))}
+              </td>
             </tr>
           </tbody>
         </table>
