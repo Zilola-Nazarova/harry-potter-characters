@@ -1,8 +1,6 @@
 import { useParams } from 'react-router';
 import { useSelector } from 'react-redux';
-// import { useState } from 'react';
-// import { v4 as uuidv4 } from 'uuid';
-import styles from '../styles/Forecast.module.css';
+import styles from '../styles/CharacterDetails.module.css';
 
 const CharacterDetails = () => {
   const { id } = useParams();

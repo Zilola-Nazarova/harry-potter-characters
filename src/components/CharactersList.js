@@ -15,7 +15,7 @@ const CharactersList = () => {
   };
 
   return (
-    <div className={styles.home}>
+    <>
       <div className={styles.search}>
         <h1>Harry Potter Characters</h1>
         <input
@@ -66,7 +66,7 @@ const CharactersList = () => {
           </ul>
         </>
       )}
-    </div>
+    </>
   );
 };
 
