@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test About render Test About 1`] = `
+<div
+  className="about"
+>
+  <h2
+    className="bright"
+  >
+    What is Harry Potter Lybrary?
+  </h2>
+  <p>
+    Harry Potter Lybrary is a site that lists down main Harry Potter characters with the following data:
+  </p>
+  <ul
+    className="dark"
+  >
+    <li>
+      Name
+    </li>
+    <li>
+      House
+    </li>
+    <li>
+      Alive/Not alive
+    </li>
+    <li>
+      Character's portrait
+    </li>
+  </ul>
+  <p>
+    When a character is selected, more data about this character is displayed such as:
+  </p>
+  <ul>
+    <li>
+      Wand properties
+    </li>
+    <li>
+      Patronus animal
+    </li>
+    <li>
+      Date of birth
+    </li>
+    <li>
+      Ancestry
+    </li>
+  </ul>
+  <p>
+    The home page has a search bar where you can type your character's name to find the information faster.
+  </p>
+  <div
+    className="credits"
+  >
+    <h3
+      className="bright"
+    >
+      thanks
+    </h3>
+    <p>
+      Harry Potter characters information by
+       
+      <a
+        href="https://hp-api.onrender.com/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        hp-api.onrender.com/
+      </a>
+      API.
+    </p>
+    <p>
+      Original design idea by
+       
+      <a
+        href="https://www.behance.net/sakwadesignstudio"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Nelson Sakwa
+      </a>
+      on Behance.
+    </p>
+  </div>
+</div>
+`;

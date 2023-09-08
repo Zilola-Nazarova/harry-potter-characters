@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Footer render Test Footer 1`] = `
+<div
+  className="footer"
+>
+  <p>
+    © 2023 Harry Potter Library
+  </p>
+  <div
+    className="contacts"
+  >
+    <p>
+      <a
+        href="#/"
+      >
+        Send a message
+      </a>
+      <a
+        href="/about"
+        onClick={[Function]}
+      >
+        About
+      </a>
+    </p>
+  </div>
+</div>
+`;

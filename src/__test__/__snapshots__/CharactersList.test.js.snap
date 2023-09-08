@@ -1,0 +1,292 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check if the Root component is rendered correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="search"
+      >
+        <h1>
+          Harry Potter Characters
+        </h1>
+        <input
+          placeholder="search..."
+        />
+      </div>
+      <ul
+        class="list"
+      >
+        <li
+          class="card"
+        >
+          <a
+            href="/details/Harry Potter"
+          >
+            <svg
+              class="icon"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <div
+              class="portrait"
+            >
+              <img
+                alt="Character portrait"
+                src="https://ik.imagekit.io/hpapi/harry.jpg"
+              />
+            </div>
+            <div
+              class="info"
+            >
+              <h2
+                class="name"
+              >
+                Harry Potter
+              </h2>
+              <h3
+                class="house"
+              >
+                Gryffindor
+              </h3>
+              <p
+                class="alive"
+              >
+                alive
+              </p>
+            </div>
+          </a>
+        </li>
+        <li
+          class="card"
+        >
+          <a
+            href="/details/Hermione Granger"
+          >
+            <svg
+              class="icon"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <div
+              class="portrait"
+            >
+              <img
+                alt="Character portrait"
+                src="https://ik.imagekit.io/hpapi/hermione.jpeg"
+              />
+            </div>
+            <div
+              class="info"
+            >
+              <h2
+                class="name"
+              >
+                Hermione Granger
+              </h2>
+              <h3
+                class="house"
+              >
+                Gryffindor
+              </h3>
+              <p
+                class="alive"
+              >
+                alive
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="search"
+    >
+      <h1>
+        Harry Potter Characters
+      </h1>
+      <input
+        placeholder="search..."
+      />
+    </div>
+    <ul
+      class="list"
+    >
+      <li
+        class="card"
+      >
+        <a
+          href="/details/Harry Potter"
+        >
+          <svg
+            class="icon"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <div
+            class="portrait"
+          >
+            <img
+              alt="Character portrait"
+              src="https://ik.imagekit.io/hpapi/harry.jpg"
+            />
+          </div>
+          <div
+            class="info"
+          >
+            <h2
+              class="name"
+            >
+              Harry Potter
+            </h2>
+            <h3
+              class="house"
+            >
+              Gryffindor
+            </h3>
+            <p
+              class="alive"
+            >
+              alive
+            </p>
+          </div>
+        </a>
+      </li>
+      <li
+        class="card"
+      >
+        <a
+          href="/details/Hermione Granger"
+        >
+          <svg
+            class="icon"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <div
+            class="portrait"
+          >
+            <img
+              alt="Character portrait"
+              src="https://ik.imagekit.io/hpapi/hermione.jpeg"
+            />
+          </div>
+          <div
+            class="info"
+          >
+            <h2
+              class="name"
+            >
+              Hermione Granger
+            </h2>
+            <h3
+              class="house"
+            >
+              Gryffindor
+            </h3>
+            <p
+              class="alive"
+            >
+              alive
+            </p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

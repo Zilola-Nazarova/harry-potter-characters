@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: rgb(53, 84, 139);
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contacts a {
+  color: #fff;
+}
+
+.contacts a:first-child {
+  padding-right: 1rem;
+  border-right: 1px solid #fff;
+}
+
+.contacts a:last-child {
+  padding-left: 1rem;
+}
