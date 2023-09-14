@@ -1,4 +1,4 @@
-<h3 align="center"><b>Mountains Forecast</b></h3>
+<h3 align="center"><b>Harry Potter Lybrary</b></h3>
 
 <p align="center">Harry Potter Lybrary is a site that lists down main Harry Potter characters with the corresponding data. Webapp retrieves data from hp-api.onrender.com API. Built with React.</p>
 
