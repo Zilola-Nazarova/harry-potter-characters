@@ -1,6 +1,6 @@
-<h3 align="center"><b>Harry Potter Lybrary</b></h3>
+<h3 align="center"><b>Harry Potter Library</b></h3>
 
-<p align="center">Harry Potter Lybrary is a site that lists down main Harry Potter characters with the corresponding data. Webapp retrieves data from hp-api.onrender.com API. Built with React.</p>
+<p align="center">Harry Potter Library is a site that lists down main Harry Potter characters with the corresponding data. Webapp retrieves data from hp-api.onrender.com API. Built with React.</p>
 
       
 <a name="readme-top"></a> 
@@ -150,17 +150,14 @@ Your app is ready to be deployed!
 
 - GitHub: [@Zilola-Nazarova](https://github.com/Zilola-Nazarova)
 - Twitter: [@NazarovaZi](https://twitter.com/NazarovaZi)
-- LinkedIn: [in/NazarovaZi](https://www.linkedin.com/in/NazarovaZi)
+- LinkedIn: [in/NazarovaZi](https://www.linkedin.com/in/zilola-nazarova)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] mountains list replenishment;
 - [ ] desktop version design;
-- [ ] forecast table improvement (add more data like wind direction, types of cloudcover);
-- [ ] weather icons attachment to the corresponding weather codes.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
