@@ -22,10 +22,10 @@ const Root = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="details/:id" element={<Details />} />
-          <Route path="about" element={<About />} />
-          <Route path="models" element={<Models />} />
-          <Route path="*" element={<ErrorPage />} />
+          <Route path="/details/:id" element={<Details />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/models" element={<Models />} />
+          <Route path="/*" element={<ErrorPage />} />
         </Route>
       </Routes>
     </>
